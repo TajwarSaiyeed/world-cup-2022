@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	}
+
+section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+	margin-bottom: 50px;
+}
+.fst-sec{
+	min-height: 100vh;
+}
+
+a{ 
+	text-decoration: none; 
+	color:#fff;
+}
+.btn-green{
+	background: #2cff13;
+	padding: 15px 30px;
+	border-radius: 7px;
+}
+.wld-play-banner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #2a2a2a;
+	width: 90%;
+	height: 600px;
+	border-radius: 23px;
+}
+.half-width{
+	color: #f1f1f1;
+}
+.half-width.fst{
+  width: 40%;
+	padding-left: 6%;
+}
+.half-width.snd{
+  width: 60%;
+	padding-left: 4%;
+}
+.half-width h1{
+	font-size: 4rem;
+	line-height: 0.9;
+	margin: 0;
+}
+.half-width p{
+	text-align: justify;
+	margin-bottom: 50px;
+}
+
+.half-width img{
+	width: 90%;
+	margin-top: 132px;
+}
+
+.snd-sec .wld{
+  min-height: 100vh;
+}
+
+.snd-sec .wld.lft{
+  display: flex;
+  justify-content: end;
+  width: 250px;
+  margin-right: 10px;
+}
+.snd-sec .lft .wld-lft-btns{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	height: 220px;
+	background: #2a2a2a;
+	border-radius: 7px;
+}
+.btn-white{
+	font-size: 18px;
+	font-weight: 500;
+	background: #fff;
+	color: #000;
+	text-align: center;
+	width: 60%;
+	margin: 10px 0;
+	padding: 15px 20px;
+	border-radius: 7px;
+}
+.fa-arrow-right{
+  margin-left: 10px;
+  padding: 0;
+}
+.btn-white.active{
+	background: #2cff13;
+	color: #fff;
+}
+
+.snd-sec .wld.rgt{
+	display: grid;
+	justify-items: center;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap: 10px;	
+}
+
+.rgt .card{
+  width: 220px;
+  height: 300px;
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  border: 0.8px solid gray;
+  box-shadow: 0 0 10px 0 #adadad;
+}
+
+
+.rgt #card{
+  width: 220px;
+  height: 250px;
+  text-align: center;
+}
+
+.rgt .card img{ 
+  width: 100%;
+  margin-bottom: 20px;
+}
+.rgt .card .images{
+  display: grid;
+  justify-items:center;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0;
+  margin: 10px 10px 20px 10px;
+  height: 100px;
+}
+
+.rgt .card .images div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.rgt .card .images div img{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.btn-outline{
+  color: gray;
+  text-decoration: none;
+  border: 0.8px solid gray;
+  width: 150px;
+  margin: 5px 20px;
+  padding: 10px 30px;
+  border-radius: 7px;
+}
+.rgt .card p{
+  margin: 20px;
+  color: #000;
+  font-weight: 700;		
+}
+.icn{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 40px;
+}
+.icn-in{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+.icn .icn-in img{
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.icn .icn-in span,
+.rgt #card span{
+  font-size: 20px;
+  color: #c3c3c3;
+}
+
+.all{
+  display: none;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #2a2a2a;
+  color:#fff;
+  width: 100%;
+  height: 300px;
+}
+footer hr{
+  width: 75%;
+  height: 1px;
+  background:#848484;
+  border: none;
+}
+footer ul{
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+   margin-right: 30px;
+}
+footer ul li{
+  list-style: none;
+  margin: 0 20px;
+}
+footer .icon{
+  display: none;
+}
+
+/* tablet*/
+@media only screen and (min-width: 689px) and (max-width: 992px){
+.half-width.fst{
+  width: 40%;
+}
+.half-width.snd{
+  width: 50%;
+}
+.half-width img{
+	width: 100%;
+	margin-bottom: -9%;
+}
+
+.snd-sec{
+  flex-direction: column;
+}
+.rgt .card{
+  width: 400px;
+  height: 420px;
+}
+
+.rgt #card{
+  width: 380px;
+  height: 300px;
+}
+.snd-sec .wld.lft{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+.snd-sec .lft .wld-lft-btns{
+	width: 90%;
+	height: 220px;
+	background: none;
+  flex-direction: row;
+}
+.btn-white{
+	width: 27%;
+	margin: 10px;
+  border: 0.8px solid gray;
+}
+.snd-sec .wld.rgt{
+  grid-template-columns: repeat(2,1fr);
+}
+
+.all{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+   
+footer ul{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+}
+footer ul li{
+  font-size: 17px;
+  margin: 0 10px;
+}
+}
+
+/* Mobile*/
+
+@media only screen and (max-width: 688px){
+  
+.btn-green{
+  padding: 15px 50px;
+}
+.wld-play-banner{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 600px;
+}
+.half-width{
+  color: #f1f1f1;
+}
+.half-width.fst{
+  width: 80%;
+  padding: 30px;
+  margin: 20px;
+  display: block;
+}
+.half-width.snd{
+  width: 80%;
+  display: block;
+}
+.half-width h1{
+  font-size: 2.5rem;
+  line-height: 0.9;
+  margin: 0;
+}
+.half-width p{
+  white-space: nowrap;
+  width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: justify;
+}
+
+.half-width img{
+  width: 100%;
+  margin: 0;
+  margin-bottom: -23px;
+}
+
+  
+.snd-sec{
+  flex-direction: column;
+}
+.snd-sec .wld{
+ margin: 0;
+}
+.snd-sec .wld.lft{
+  margin: 0;
+}
+.snd-sec .lft .wld-lft-btns{
+  margin: 0;
+}
+.rgt .card{
+  width: 300px;
+  height: 350px;
+}
+.rgt #card{
+  width: 300px;
+  height: 270px;
+}
+.snd-sec .lft .wld-lft-btns{
+  background: none;
+}
+.btn-white{
+  border: 0.8px solid gray;
+}
+  
+.snd-sec .wld.rgt{
+  grid-template-columns: repeat(1,1fr);
+}
+
+  
+footer{
+  height: 500px;
+  
+} 
+footer ul{
+  flex-direction: column;
+  text-align: center;
+}
+footer ul li{
+  font-size: 17px;
+  margin: 3px 0;
+  padding: 10px 20px;
+}
+footer .icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 24px;
+}
+footer .icon .fa-brands{
+  padding: 0 10px;
+  outline: none;
+}
+}
